@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Greenfield Resort & Event Place — Home</title>
 
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
@@ -20,22 +18,20 @@
     }
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', sans-serif; background-color: #f8fafb; color: #0f172a; }
-    /* small navbar blur fallback */
+
     header .nav-bg { backdrop-filter: blur(6px); background-color: rgba(255,255,255,0.80); }
-    /* active nav */
+
     .nav-link.active { color:var(--brand-emerald); font-weight:600; }
-    /* subtle focus */
+
     input:focus, textarea:focus { outline: none; box-shadow: 0 0 0 4px rgba(4,108,86,0.08); border-color: var(--brand-emerald); }
   </style>
 </head>
 <body>
 
-<!-- Fixed header -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       
-      <!-- Logo (Left side) -->
       <a href="#home" class="flex items-center gap-3">
         <img src="https://scontent.fmnl9-1.fna.fbcdn.net/v/t39.30808-6/520364911_1253575686561732_8613754315054389025_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeE-5MCu9wJKY6N40j2U9YNyShreVZU81plKGt5VlTzWmYizZXw_FWXC2CO95fv-nhNkGHsebXrPaHd7_dvo7f4O&_nc_ohc=7TBFb6TYYFwQ7kNvwFPWimj&_nc_oc=AdnBSHdAPw1TMDNmvFEPdyOQRW9CV60Uvr8TkYEpUNcPAfTrkFdHu7TmC3cHwLXMF1E&_nc_zt=23&_nc_ht=scontent.fmnl9-1.fna&_nc_gid=uvVscA1obNuA8tUQpGsNZA&oh=00_AfjTu3GdlE7sN1Um8-3ldURtQJ0VXkbTb8k1bt67fBlJHg&oe=691E79A9" 
   		alt="Greenfield Resort Logo" 
@@ -49,16 +45,16 @@
         </div>
       </a>
 
-      <!-- Navigation (Right side) -->
+
       <nav class="hidden md:flex items-center gap-6 text-sm">
         <a class="nav-link hover:text-[var(--brand-emerald)]" href="#home">Home</a>
         <a class="nav-link hover:text-[var(--brand-emerald)]" href="#packages">Packages</a>
         <a class="nav-link hover:text-[var(--brand-emerald)]" href="#amenities">Amenities</a>
         <a class="nav-link hover:text-[var(--brand-emerald)]" href="#rates">Rates</a>
-        <a class="nav-link hover:text-[var(--brand-emerald)]" href="#promos">Promos&nbsp;</a>
+        <a class="nav-link hover:text-[var(--brand-emerald)]" href="#promos">Promos</a>
+		<a class="nav-link hover:text-[var(--brand-emerald)]" href="#WALA PA">Booking & Reservation</a>
       </nav>
 
-        <!-- mobile menu toggle -->
         <div class="md:hidden">
         </div>
     </div>
@@ -67,18 +63,15 @@
 
   <main class="pt-20">
 
-    <!-- HERO -->
    <section id="home" class="relative min-h-[72vh] flex items-center justify-center overflow-hidden">
-  <!-- Background Video -->
+
   <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
     <source src="1024.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
-  <!-- Tint Overlay -->
   <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/25"></div>
 
-  <!-- Hero Content -->
   <div class="max-w-6xl mx-auto px-6 py-20 relative z-10 grid lg:grid-cols-2 gap-8 items-center text-white">
     <div>
       <h1 class="text-4xl md:text-5xl font-bold mb-4" style="font-family:'Playfair Display',serif;">
@@ -97,7 +90,6 @@
         </a>
       </div>
 
-      <!-- quick features -->
       <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm text-white/90">
         <div class="flex items-center gap-2">
           <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -120,7 +112,6 @@
       </div>
     </div>
 
-    <!-- intro card -->
     <div class="bg-white/95 rounded-2xl p-6 shadow-xl" style="box-shadow:var(--card-shadow);">
       <h3 class="text-xl font-semibold text-[var(--brand-emerald)] mb-2">Plan your event</h3>
       <p class="text-sm text-gray-700 mb-4">
@@ -140,8 +131,6 @@
   </div>
 </section>
 
-
-    <!-- PACKAGES -->
     <section id="packages" class="py-16 bg-white">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-10">
@@ -150,7 +139,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- Private Pool Villa -->
+
           <article class="rounded-2xl bg-white shadow-md p-5">
             <div class="h-48 rounded-xl overflow-hidden mb-4">
               <img src="https://scontent.fmnl9-2.fna.fbcdn.net/v/t39.30808-6/471583381_1646586122562352_7994232393466512731_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeFZrA-WIvPnVowgWvG75zg2i38qJtUiwSyLfyom1SLBLKIpWU2q1o63WO6AlJkpgIVO5zEGB9ULqwyNfF04Yu_G&_nc_ohc=Aoo_8aDj8mcQ7kNvwFAsUVY&_nc_oc=Adl7HhcgNnhVAF5lzh4Fetn168kyzGGb5MXcyabruJ_R9ofAo9_lBkUucUaUFhPY6oQ&_nc_zt=23&_nc_ht=scontent.fmnl9-2.fna&_nc_gid=P78MildFgFM22wctKrwfNA&oh=00_Afgyui5CICAOmmjEJLTkwpgQAiIMlp6-eQTDBT6jvHE_rg&oe=691E6F57" class="w-full h-full object-cover">
@@ -163,7 +152,6 @@
             </div>
           </article>
 
-          <!-- Event Pavilion -->
           <article class="rounded-2xl bg-white shadow-md p-5">
             <div class="h-48 rounded-xl overflow-hidden mb-4">
               <img src="https://scontent.fmnl9-3.fna.fbcdn.net/v/t39.30808-6/532388853_122149222688752125_4385659228490706226_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHOHXAVA8mkRbBr8LZC6ULQWjy8U46nAcJaPLxTjqcBwjLbJVK2I8q1CeG6AkvHeKTLHkk0Da52q4XAhNtZN485&_nc_ohc=griMcA5qaHYQ7kNvwGPdQkc&_nc_oc=AdnpiztXr-czyreqV-t6uYXPLSAwHlhKlu9dGPFbdJ2_Y0L_eJ1DOkLybAgsCLUM0tg&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&_nc_gid=bnTOPvnvKaq06GiKOG-oHA&oh=00_AfhHJ3IvRtbMtCMnc9L1lUdpQc4bqu1BQYIvI3nxUNdk2A&oe=691E801E">
@@ -176,7 +164,6 @@
             </div>
           </article>
 
-          <!-- Luxury Rooms -->
           <article class="rounded-2xl bg-white shadow-md p-5">
             <div class="h-48 rounded-xl overflow-hidden mb-4">
               <img src="https://i.ibb.co/kg40zLCN/487524672-1167019205217381-6535255330158635913-n.jpg">
@@ -192,7 +179,6 @@
       </div>
     </section>
 
-    <!-- AMENITIES -->
     <section id="amenities" class="py-16 bg-gray-50">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-8">
@@ -240,7 +226,6 @@
       </div>
     </section>
 
-    <!-- RATES -->
     <section id="rates" class="py-16 bg-white">
       <div class="max-w-5xl mx-auto px-6">
         <div class="text-center mb-8">
@@ -273,7 +258,6 @@
       </div>
     </section>
 
-   <!-- PROMOS (Redesigned Resort Style) -->
 <section id="promos" class="py-16 bg-gradient-to-b from-gray-50 to-emerald-50">
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center mb-12">
@@ -283,7 +267,6 @@
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-      <!-- PHASE 1 ALFRESCO -->
       <article class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
         <div class="h-48 overflow-hidden relative">
           <img src="https://scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-6/499714860_1214571110462190_8005939550159386149_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG4X1NIh2O-1c5ouHZqDWwQbbl0L6rPB_5tuXQvqs8H_oNJKQQtFmVJ84wgCiffYZfkOxbtRBM9tHm9UUccw_uJ&_nc_ohc=GDd5iP2c3lgQ7kNvwGN6-9a&_nc_oc=Adk2N6z-SWVAI1GE8a32JChbOGcXxBhrQr5zSVXX9JCYFbnopmgpBW5ny5mi9yucJ04&_nc_zt=23&_nc_ht=scontent.fmnl9-4.fna&_nc_gid=XDL71O1xmb51Eh8TjupnsQ&oh=00_AfhRmvDl9T9RRQhG6p5mtoH3M6b3br356m9GOqNSmNqN7g&oe=691E84EE" alt="Phase 1 Alfresco" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
@@ -311,7 +294,6 @@
         </div>
       </article>
 
-      <!-- PHASE 2 HOTEL -->
       <article class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
         <div class="h-48 overflow-hidden relative">
           <img src="https://scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-6/519572662_1256385276501809_674757604258489203_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeFDi49vwxWryIySP9G3yJbb2ZtP3PFtArHZm0_c8W0CsWJiAh58FHW9Ky5P_DelfYMJDlQDvP0TouZkVBhCDhJR&_nc_ohc=pCaePTnU-9kQ7kNvwFBjCNQ&_nc_oc=AdkunMUrx5NcfF-NIqlR-HlosJJxjIHRUkWKHHrZfxUCaCXrYzrCe8Uju9A_M0oQ968&_nc_zt=23&_nc_ht=scontent.fmnl9-4.fna&_nc_gid=dq8_ene13dTnt4Ut3npKNA&oh=00_AfjcTYxEQ6bbEJus0m7YfEgCdwATJxnZPGQNvr3N45qCoA&oe=691E6902" alt="Phase 2 Hotel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
@@ -339,7 +321,6 @@
         </div>
       </article>
 
-      <!-- PHASE 1 DAY/NIGHT TOUR -->
       <article class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
         <div class="h-48 overflow-hidden relative">
           <img src="https://scontent.fmnl9-6.fna.fbcdn.net/v/t1.6435-9/159268744_824892248065081_5711919140727702340_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGv4lYlB0VD40d6qOLYz52VsBPv8YKPIhmwE-_xgo8iGdxdNzRaTolECANI3g7-JaarYn1K07_erjgIKzKIJzR3&_nc_ohc=gKhFn82P3wUQ7kNvwHswa4h&_nc_oc=AdkMkPU_VrNcfQQqv9q9JTJIt_D0ga1z5WsTedsAPDFx1We8H7z-mJCjZMrzUi1IRaw&_nc_zt=23&_nc_ht=scontent.fmnl9-6.fna&_nc_gid=IMRnXWs8vrjd5kvoJZuafg&oh=00_AfcoMdNHKsYw7IdF_KDazuKIQhU9EgXGMXxcyVjvBF3XmQ&oe=691F5C2A" alt="Day & Night Tour" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
@@ -376,7 +357,6 @@
   </div>
 </section>
 
-<!-- CONTACT / BOOKING / RESERVATION -->
 <section id="contact" class="py-16 bg-gray-50">
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center mb-10">
@@ -384,10 +364,8 @@
       <p class="text-gray-600 mt-2">Connect with us, book your stay, or confirm your reservation — all in one place.</p>
     </div>
 
-    <!-- Grid of Three Equal Cards -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-      <!-- CONTACT CARD -->
       <div class="bg-white p-6 rounded-xl shadow flex flex-col justify-between transition-all duration-300 hover:shadow-[0_0_25px_rgba(16,185,129,0.4)] hover:-translate-y-1">
         <div>
           <h3 class="font-semibold text-lg mb-3 text-[var(--brand-emerald)]"> Contact Info</h3>
@@ -401,7 +379,6 @@
           </p>
         </div>
 
-        <!-- Buttons -->
         <div class="mt-6 flex flex-col gap-3">
           <a href="https://www.facebook.com/Greenfieldsresortneventsplace/" 
             target="_blank" 
@@ -419,7 +396,6 @@
         </div>
       </div>
 
-      <!-- BOOKING FORM -->
       <div class="bg-white p-6 rounded-xl shadow flex flex-col justify-between transition-all duration-300 hover:shadow-[0_0_25px_rgba(16,185,129,0.4)] hover:-translate-y-1">
         <div>
           <h3 class="font-semibold text-lg mb-3 text-[var(--brand-emerald)]">Booking Form</h3>
@@ -457,7 +433,6 @@
         </button>
       </div>
 
-      <!-- RESERVATION FORM -->
       <div class="bg-white p-6 rounded-xl shadow flex flex-col justify-between transition-all duration-300 hover:shadow-[0_0_25px_rgba(16,185,129,0.4)] hover:-translate-y-1">
         <div>
           <h3 class="font-semibold text-lg mb-3 text-[var(--brand-emerald)]">Reservation Form</h3>
@@ -499,8 +474,6 @@
   </div>
 </section>
 
-
-    <!-- FOOTER -->
     <footer class="bg-[var(--brand-emerald)] text-white py-6 mt-8">
       <div class="max-w-7xl mx-auto px-6 text-center text-sm">
 		  
@@ -515,16 +488,33 @@
 
   </main>
 
-  <!-- JavaScript active nav highlighting using  -->
+<div id="loginModal" class="hidden fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-[9999]">
+  <div id="loginModalBox" class="relative bg-white rounded-xl shadow-xl w-[90%] max-w-sm p-6 text-center transform scale-95 opacity-0 transition-all duration-200 flex flex-col justify-center">
+
+    <button id="closeModal" type="button" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600 text-2xl leading-none">&times;</button>
+
+    <h2 class="text-lg font-semibold mb-5 text-gray-800">Log In To Continue</h2>
+
+    <button type="button" onclick="window.location.href='https://accounts.google.com/signin'"
+      class="w-full border border-gray-300 py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-50 transition mb-4">
+      <img src="https://www.svgrepo.com/show/355037/google.svg" alt="Google" class="w-5 h-5">
+      <span class="font-medium text-gray-700">Log in with Google</span>
+    </button>
+
+    <button type="button" onclick="window.location.href='./Admin Log In.html'"
+      class="w-full py-3 rounded-lg bg-[var(--brand-emerald)] text-white font-medium hover:opacity-90 transition">
+      Admin Login
+    </button>
+
+  </div>
+</div>
 	
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* YEAR */
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ACTIVE NAVIGATION HIGHLIGHT */
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-link");
   const obs = new IntersectionObserver((entries) => {
@@ -541,7 +531,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.45 });
   sections.forEach((section) => obs.observe(section));
 
-  /* VIDEO SOUND CONTROL */
   const video = document.querySelector("#home video");
   const section = document.querySelector("#home");
   if (video && section) {
@@ -562,7 +551,6 @@ document.addEventListener("DOMContentLoaded", () => {
     videoObserver.observe(section);
   }
 
-  /* COOKIE BANNER */
   const banner = document.createElement("div");
   banner.id = "cookie-banner";
   banner.className =
@@ -582,13 +570,11 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
   document.body.appendChild(banner);
 
-  // Slide-in animation
   setTimeout(() => {
     banner.style.opacity = "1";
     banner.style.transform = "translateY(0)";
   }, 200);
 
-  // Fade out and remove when clicked
   banner.querySelector("#cookie-accept").addEventListener("click", () => {
     banner.style.opacity = "0";
     banner.style.transform = "translateY(40px)";
